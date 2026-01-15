@@ -1,0 +1,119 @@
+:root {
+  --blue-500: hsl(215, 51%, 70%);
+  --cyan-400: hsl(178, 100%, 50%);
+
+  /* Neutral */
+  /* main BG */
+  --blue-950: hsl(217, 54%, 11%);
+  --blue-955: hsl(217, 54%, 9%);
+  /* card BG */
+  --blue-900: hsl(216, 50%, 16%);
+  /* line */
+  --blue-800: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nft-card__container {
+  background-color: var(--blue-950);
+  min-height: 100vh;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.nft-card {
+  background-color: var(--blue-900);
+  max-width: 350px;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 15px;
+
+  box-shadow: 0 2rem 3rem 1rem var(--blue-955);
+}
+
+.nft-card__image-container {
+  margin-bottom: 1rem;
+}
+
+.nft-card__image {
+  max-width: 100%;
+  border-radius: 9px;
+}
+
+.nft-card__content {
+  border-bottom: 1px solid var(--blue-800);
+  margin-bottom: 0.8rem;
+}
+
+.nft-card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.nft-card__description {
+  font-size: 1.125rem;
+  color: var(--blue-500);
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.nft-card__stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+.nft-card__stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+}
+
+.nft-card__stat--price {
+  color: var(--cyan-400);
+}
+
+.nft-card__stat--time {
+  color: var(--blue-500);
+}
+
+.nft-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nft-card__avatar {
+  max-width: 13%;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.nft-card__author {
+  color: var(--blue-500);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.nft-card__author a:link,
+.nft-card__author a:visited {
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media (max-width: 425px) {
+  .nft-card {
+    max-width: 320px;
+  }
+}
